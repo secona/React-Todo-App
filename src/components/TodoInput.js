@@ -12,15 +12,13 @@ function TodoInput({ todo }) {
     setInput('');
   };
 
-  const HandleChange = e => setInput(e.target.value);
-
   return (
     <form 
       id="todo-form"
       style={{ 
         margin: "8px 15px"
       }}
-      onSubmit={() => HandleSubmit(event)}
+      onSubmit={HandleSubmit}
     >
       <TextField
         size="small"
@@ -28,7 +26,7 @@ function TodoInput({ todo }) {
         fullWidth
         label="What do you want to do?"
         value={input}
-        onChange={() => HandleChange(event)}
+        onChange={e => setInput(e.target.value)}
       />
     </form>
   )
