@@ -5,7 +5,7 @@ import Link from "./Link";
 
 function Links() {
   return (
-  	<Grid container direction="row" justify="center" alignItems="center">
+		<Grid container direction="row" justify="center" alignItems="center">
     	<Link Icon={CodeIcon} tooltip="Source Code" href="https://github.com/secona/React-Todo-App"/>
     </Grid>
   );
